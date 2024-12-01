@@ -92,7 +92,7 @@ if (nota1<nota2 && nota1<nota3 && nota1<nota4){
 float media = (nota1+nota2+nota3+nota4)/3;
 printf ("Media do aluno: %.1f: ", media);
 
-//Questão	IV	(3,0)
+//Questão	4)	(3,0)
 //Escreva	 um	 programa	 em	 C,	 que	 leia	 duas	 sequencias	 de	 três	 números	
 //correspondendo	 a	 idade	 em	 anos,	 meses	 e	 dias	 de	 duas	 pessoas.	 O	 programa	
 //deve	verificar	e	imprimir	qual	das	duas	pessoas	(a	primeira	ou	a	segunda)	é	mais	
