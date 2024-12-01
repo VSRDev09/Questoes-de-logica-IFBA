@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main () {
 	
-// Questão	I	(2,0)
-//Escreva	 um	 programa	 em	 C,	 que	 leia	 um	 número	 menor	 que	 9999	 e	 mostre	 a	
-//soma	 dos	 dígitos	 centrais	 (2º	 e	 3º	 dígitos).	 Assim,	 se	 o	 número	 informado	 for	
-//4326,	a	saída	do	programa	deverá	ser	5	(3+2).
+// Questão 1	(2,0)
+//Escreva um programa em C, que	leia um	 número	menor que 9999 e mostre	a	
+//soma	dos dígitos centrais (2º e 3º dígitos).	Assim, se o número informado for	
+//4326,	a saída	do program devera ser 5	(3+2).
 printf ("Questao 1)\n");
 printf ("Informe um numero menor que 9999: ");
 int num;
@@ -21,23 +21,25 @@ printf ("Resposta: %d\n\n", num);
 
 
 // Questão 2)
-//Escreva	 um	 programa	 em	 C, que	 leia	 um	 número	 menor	 que	 9999,	
-//representando	 uma	 senha.	 O	 programa	 deve	 verificar	 se	 a	 senha	 é	 válida (e	
-//imprimir	“Senha	válida”),	ou	se	a senha viola alguma	das	seguintes	regras, caso
-//em	que,	o	programa	deverá	apresentar	a	mensagem de	violação	correspondente:
+// Escreva um programa em C, que leia um número menor que 9999,
+// representando uma senha. O programa deve verificar se a senha
+// é válida (e imprimir “Senha válida”), ou se a senha viola alguma
+// das seguintes regras, caso em que o programa deverá apresentar
+// a mensagem de violação correspondente:
 
 //                   Regra                                  |                         Mensagem
-//															|
-//1	 – Algarismos	 iguais:	 a	 senha	 é	 formada	|	“A	senha	é	formada	por algarismos	iguais”	
-//por	quatro	algarismos	idênticos.	Ex:	5555			|
-//															|
-//2	 – Sequencia	 crescente:	 a	 senha	 é				|	“A	 senha	 é	 formada	 por	 uma	 sequencia crescente"	
-//formada por algarismos	que formam	uma					|
-//sequencia	crescente.	Ex.:	3456						|
-//															|
-//2	 – Sequencia	 decrescente:	 a	 senha	 é			|		“A	 senha	 é	 formada	 por	 uma	 sequencia	decrescente”												
-//formada	 por	 algarismos	 que	 formam	 uma		|
-//sequencia	decrescente.	Ex.:	4321					|
+//                                                           |
+// 1 – Algarismos iguais: a senha é formada                |  “A senha é formada por algarismos iguais”
+// por quatro algarismos idênticos. Ex: 5555               |
+//                                                           |
+// 2 – Sequência crescente: a senha é                      |  “A senha é formada por uma sequência crescente”
+// formada por algarismos que formam uma                   |
+// sequência crescente. Ex.: 3456                          |
+//                                                           |
+// 3 – Sequência decrescente: a senha é                    |  “A senha é formada por uma sequência decrescente”
+// formada por algarismos que formam uma                   |
+// sequência decrescente. Ex.: 4321                        |
+
 
 printf ("Questao 2)\n");
 int senha;
@@ -63,10 +65,11 @@ if (senha>9999){
 	printf ("Senha valida!");
 }
 
-//Questão 3)
-//Escreva	um	programa	em	C,	que	leia	quatro	notas	de	um	aluno	e	imprima	a	nota	
-//final	 deste	 aluno.	 O	 cálculo	 da	 nota	 final,	 é	 feito	 descartando-se	 a	 menor	 das	
-//quatro	notas	e	calculando	a	média	aritmética	das	três	notas	restantes.
+// Questão 3)
+// Escreva um programa em C, que leia quatro notas de um aluno e imprima a nota
+// final deste aluno. O cálculo da nota final é feito descartando-se a menor das
+// quatro notas e calculando a média aritmética das três notas restantes.
+
 
 printf ("\nQuestao 3)\n");
 float nota1, nota2, nota3, nota4;
@@ -92,13 +95,14 @@ if (nota1<nota2 && nota1<nota3 && nota1<nota4){
 float media = (nota1+nota2+nota3+nota4)/3;
 printf ("Media do aluno: %.1f: ", media);
 
-//Questão	4)	(3,0)
-//Escreva	 um	 programa	 em	 C,	 que	 leia	 duas	 sequencias	 de	 três	 números	
-//correspondendo	 a	 idade	 em	 anos,	 meses	 e	 dias	 de	 duas	 pessoas.	 O	 programa	
-//deve	verificar	e	imprimir	qual	das	duas	pessoas	(a	primeira	ou	a	segunda)	é	mais	
-//velha ou	se	elas	possuem	a	mesma	idade.	Por	exemplo,	se	os valores lidos	forem	
-//8	anos,	4	meses	e	2	dias	para	primeira	pessoa	e	8	anos,	3	meses	e	15	dias	para	a
-//segunda; o	programa	deve	imprimir:	“A primeira	pessoa	é	mais	velha”.
+// Questão 4) (3,0)
+// Escreva um programa em C, que leia duas sequências de três números 
+// correspondendo à idade em anos, meses e dias de duas pessoas. O programa 
+// deve verificar e imprimir qual das duas pessoas (a primeira ou a segunda) 
+// é mais velha ou se elas possuem a mesma idade. Por exemplo, se os valores 
+// lidos forem 8 anos, 4 meses e 2 dias para a primeira pessoa e 8 anos, 
+// 3 meses e 15 dias para a segunda; o programa deve imprimir: “A primeira 
+// pessoa é mais velha”.
 
 printf ("\nQuestao 4)\n");
 printf ("Informe respectivamente o Ano, Mes e Dia da Pessoa 1:\n");
